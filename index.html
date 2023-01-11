@@ -1,16 +1,18 @@
-<script type="text/javascript" src="https://cdn.bitmovin.com/player/web/8/bitmovinplayer.js"></script>
-<script type="text/javascript" src="https://cdn.bitmovin.com/analytics/web/2/bitmovinanalytics.min.js"></script>
-
 <!DOCTYPE html>
 <html>
+<script src="http://cdn.dashjs.org/latest/dash.all.min.js"></script>
+
+<style>
+    video {
+       width: 960px;
+       height: 540px;
+    }
+</style>
+
+<h1> Big Buck Bunny AVC Streaming</h1>
 <body>
-<div id="heading">
-<h1>BigBuckBunny</h1>
-</div>
-<div id="video">
-<video controls controlsList="nodownload" width="960" height="540" muted preload='auto'>
-  <source src="https://vigneshvijay94.github.io/BBB_AVC/output_BBC.mpd" />
-</video>
-</div>
+   <div>
+       <video data-dashjs-player autoplay src="https://vigneshvijay94.github.io/BBB_AVC/output_BBC.mpd" controls></video>
+   </div>
 </body>
 </html>
